@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e225749;
 
 import org.junit.jupiter.api.Test;
-//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 class WarriorTest {
     /**
@@ -15,13 +15,15 @@ class WarriorTest {
     @Test
     void attackWithWeponSkillTest() {
         int defaultWarriorHp = 100;
+        int defaultEnemyHp = 450;
+        int finishEnemyHp = 0;
         Warrior demoWarrior = new Warrior("デモ勇者", defaultWarriorHp, 100);
-        Enemy slime = new Enemy("スライムもどき", 450, 5);
-        for(int i=0; i<4; i++){
+        Enemy slime = new Enemy("スライムもどき", defaultEnemyHp, 5);
+        for(int i=0; i<3; i++){
             demoWarrior.attackWithWeponSkill(slime);
             slime.attack(demoWarrior);
             //assertEquals(defaultWarriorHp, demoWarrior.hitPoint);
         }
-
+        assertEquals(finishEnemyHp, slime.hitPoint);
     }
 }

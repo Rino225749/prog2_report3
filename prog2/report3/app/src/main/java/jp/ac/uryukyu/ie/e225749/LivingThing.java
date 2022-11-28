@@ -42,13 +42,13 @@ public class LivingThing {
         }
      }
 
-     /*public void attackWithWeponSkill(LivingThing opponent){
+     public void attackWithWeponSkill(LivingThing opponent){
         if (this.dead == false){
             int damage = (int)(1.5 * attack);
             System.out.printf("%sの攻撃！ウェポンスキルを発動！%sに%dのダメージを与えた！！\n", name, opponent.name, damage);
             opponent.wounded(damage);
         }
-    }*/
+    }
 
      /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。

@@ -5,11 +5,11 @@ public class Warrior extends Hero{
         super(name, maximumHP, attack);
     }
 
-    public void attackWithWeponSkill(Enemy e){
+    /*public void attackWithWeponSkill(Enemy e){
         if (this.dead == false){
             int damage = (int)(1.5 * attack);
             System.out.printf("%sの攻撃！ウェポンスキルを発動！%sに%dのダメージを与えた！！\n", name, e.name, damage);
             e.wounded(damage);
         }
-    }
+    }*/
 }
