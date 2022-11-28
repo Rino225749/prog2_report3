@@ -19,7 +19,7 @@ class WarriorTest {
         int finishEnemyHp = 0;
         Warrior demoWarrior = new Warrior("デモ勇者", defaultWarriorHp, 100);
         Enemy slime = new Enemy("スライムもどき", defaultEnemyHp, 5);
-        for(int i=0; i<3; i++){
+        for(int i=0; i<5; i++){
             demoWarrior.attackWithWeponSkill(slime);
             slime.attack(demoWarrior);
             //assertEquals(defaultWarriorHp, demoWarrior.hitPoint);
