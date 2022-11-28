@@ -26,7 +26,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'jp.ac.uryukyu.ie.e225749.App'
+    mainClass = 'Main'
 }
 
 tasks.named('test') {
@@ -38,6 +38,6 @@ sourceCompatibility = 10
 
 jar {
     manifest {
-        attributes  "Main-Class": "jp.ac.uryukyu.ie.tnal.App"
+        attributes  "Main-Class": "Main"
     }
 }
