@@ -10,8 +10,8 @@ package jp.ac.uryukyu.ie.e225749;
  */
 public class Enemy {
     private String name;
-    public int hitPoint;
-    public int attack;
+    private int hitPoint;
+    private int attack;
     private boolean dead;
     
 
@@ -52,7 +52,7 @@ public class Enemy {
      */
     public void wounded(int damage){
         hitPoint -= damage;
-        if( hitPoint < 0 ) {
+        if( hitPoint <= 0 ) {
             dead = true;
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
